@@ -62,3 +62,5 @@ This project implements the classic **Connect4** game in Python, featuring a **g
 4. **Win the Game**:  
    - The objective is to connect four of your discs (horizontally, vertically, or diagonally) before your opponent does.
    - Once the game ends, the result will be displayed, and you can start a new game.
+  
+   ![](https://github.com/ParsaJahantab/connect4/blob/main/connect4.gif)
