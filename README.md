@@ -49,10 +49,10 @@ This project implements the classic **Connect4** game in Python, featuring a **g
                 game.play()
         ```
    - **Q-Learning Agent**: The agent starts with no prior knowledge but learns and improves after each game. To choose Q-Learning use the following code :
-           ```python
+        ```python
                     game = Game(False,2,None)
                     game.play()
-           ```
+        ```
 
 3. **Make Your Move**:  
    - The Connect4 board will be displayed in the GUI.
