@@ -22,9 +22,43 @@ This project implements the classic **Connect4** game in Python, featuring a **g
 4. Play the game in the GUI and choose to compete against:
    - The **Minimax AI**.
    - The **Q-learning agent** that learns over time.
+  
+
 
 
 ## 🎓 How Q-Learning Works in This Project
 - The agent starts without any knowledge of the game.
 - Through playing games, it learns by trial and error using a reward-based system.
 - The Q-values are updated after each game to reflect better strategies.
+
+
+## 🎮 How to Play
+
+1. **Launch the Game**:  
+   Run the game by executing the following command in your terminal:
+   ```bash
+   python main.py
+   ```
+
+2. **Choose Your Opponent**:  
+   - **Minimax AI**: The AI makes optimal moves based on the Minimax algorithm. To choose Minimax AI use the following code :
+        ```python
+                q_agent = train()
+                q_agent.set_players(2,1)
+                game = Game(False,4,q_agent)
+                game.play()
+        ```
+   - **Q-Learning Agent**: The agent starts with no prior knowledge but learns and improves after each game. To choose Q-Learning use the following code :
+           ```python
+                    game = Game(False,2,None)
+                    game.play()
+           ```
+
+3. **Make Your Move**:  
+   - The Connect4 board will be displayed in the GUI.
+   - Select the column (1–7) where you'd like to drop your disc.
+   - Your disc (🔵) will be placed, and then the opponent’s disc (🔴) will be placed automatically.
+
+4. **Win the Game**:  
+   - The objective is to connect four of your discs (horizontally, vertically, or diagonally) before your opponent does.
+   - Once the game ends, the result will be displayed, and you can start a new game.
